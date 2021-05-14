@@ -1,0 +1,61 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "vars.scss";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: $dark;
+  color: $light;
+
+  .sidebar {
+    height: calc(100% - 63px);
+    bottom: 0;
+    position: fixed;
+    padding: 18px 16px;
+    border-right: 1px solid $light;
+
+    .tabs {
+      li {
+        padding: 8px 12px;
+        border-radius: 3px;
+        background: transparent;
+        display: flex;
+        width: 208px;
+        cursor: pointer;
+
+        .icon {
+          flex: 1;
+          width: 24px;
+          height: 24px;
+        }
+        .title {
+          flex: 9;
+          margin-left: 16px;
+        }
+      }
+      li.active {
+        background: $primary;
+      }
+    }
+  }
+  .root {
+    position: relative;
+    top: 63px;
+    left: 240px;
+    width: calc(100% - 240px);
+    height: calc(100vh - 63px);
+    padding: 20px 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h2 {
+    font-weight: 500 !important;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../vars";
+
+button {
+  border: none;
+  outline: none;
+  background: $primary;
+  border-radius: 3px;
+  color: $light;
+  width: 152px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+
+  &:hover {
+    background: rgb(32, 159, 152);
+  }
+}
