@@ -1,0 +1,31 @@
+@import "../../var";
+
+.consult-modal {
+  background: white;
+  position: relative;
+  padding: 48px 48px 25px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+input {
+  background: #FFFFFF;
+  border: 1px solid $primary-green;
+  border-radius: 10px;
+  padding: 13px 17px;
+  width: 100%;
+  color: $primary-dark;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #4F4F4F;
+}
